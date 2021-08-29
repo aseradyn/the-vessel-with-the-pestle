@@ -75,7 +75,8 @@ export const Home = () => {
                 <SubjectGroup>
                     <SubjectCard>
                         <SubjectDescription>
-                        My professional experience? Including:
+                        My professional experience?
+                        <p>Including:</p>
                         <ul>
                             <li>User experience and interface design</li>
                             <li>Web development (focus on UI)</li>
@@ -87,7 +88,8 @@ export const Home = () => {
                         </SubjectLink>
                     </SubjectCard>
                     <SubjectCard>
-                            <SubjectDescription>My personal life? Such as:
+                            <SubjectDescription>My personal life? 
+                              <p>Such as:</p>
                                 <ul>
                                     <li>Travel</li>
                                     <li>Photography</li>
@@ -100,7 +102,8 @@ export const Home = () => {
                     </SubjectCard>
                     <SubjectCard>
                         <SubjectDescription>
-                        My endless hobbies? Especially:
+                        My endless hobbies? 
+                        <p>Especially:</p>
                         <ul>
                             <li>Spinning yarn</li>
                             <li>Weaving cloth</li>

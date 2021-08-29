@@ -29,7 +29,7 @@ export default function TopBar() {
         }
 
         .quip {
-          font-size: 0.8em;
+          font-size: 0.9em;
             @media only screen and (max-width: 650px) {
                 display: none;
             }

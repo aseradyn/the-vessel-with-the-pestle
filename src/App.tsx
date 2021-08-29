@@ -14,6 +14,7 @@ import styled from '@emotion/styled';
 import { Professional } from './components/professional/professionalPage';
 import { Personal } from './components/personal/personalPage';
 import { Hobbies } from './components/hobbies/hobbiesPage';
+import { Credits } from './components/credits/creditsPage';
 
 const Page = styled.div`
   min-height: 100vh;
@@ -40,6 +41,15 @@ function App() {
         color: ${useDarkMode ? colors.secondary[500] : colors.secondary[700]};
         text-underline-position: under;
       }
+      h1 {
+        font-size: 1.5em;
+        font-variant: small-caps;
+      }
+      h2 {
+        font-size: 1.15em;
+        font-variant: small-caps;
+        margin-top: 30px;
+      }
     `} />
     <Router>
       <Page>
@@ -50,6 +60,7 @@ function App() {
                 <Route path="/professional"><Professional /></Route>
                 <Route path="/personal"><Personal /></Route>
                 <Route path="/hobbies"><Hobbies /></Route>
+                <Route path="/credits"><Credits /></Route>
                 <Route path="/"><Home /></Route>
               </Switch>
         </div>

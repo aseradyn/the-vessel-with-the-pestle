@@ -11,9 +11,9 @@ import {
   Route
 } from 'react-router-dom';
 import styled from '@emotion/styled';
-import { Professional } from './components/professional';
-import { Personal } from './components/personal';
-import { Hobbies } from './components/hobbies';
+import { Professional } from './components/professional/professionalPage';
+import { Personal } from './components/personal/personalPage';
+import { Hobbies } from './components/hobbies/hobbiesPage';
 
 const Page = styled.div`
   min-height: 100vh;

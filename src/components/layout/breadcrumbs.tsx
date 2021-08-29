@@ -32,7 +32,7 @@ const BreadcrumbLink = (props: BreadcrumbLinkProps) => {
 
 export const Breadcrumbs = (props: BreadcrumbsProps) => {
 
-    const {colors, useDarkMode} = useContext(ThemeContext);
+    const {colors} = useContext(ThemeContext);
 
     const Container = styled.div`
         font-size: 0.8em;

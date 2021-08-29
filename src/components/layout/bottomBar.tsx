@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { Link } from 'react-router-dom';
 import { ThemeContext } from '../theme/themeContext';
 import { useContext } from 'react';
 

@@ -7,7 +7,7 @@ import BeachAccessTwoToneIcon from '@material-ui/icons/BeachAccessTwoTone';
 import MouseTwoToneIcon from '@material-ui/icons/MouseTwoTone';
 import { Link } from 'react-router-dom';
 
-export type StyleProps = {
+type StyleProps = {
     backgroundColor: string
   }
   
@@ -46,9 +46,7 @@ export type StyleProps = {
     grid-template-rows: auto auto;
   `
 
-  const SubjectDescription = styled.div`
-    align-self: start;
-  `
+ 
 
   const SubjectLink = styled.div`
     align-self: end;
@@ -57,9 +55,19 @@ export type StyleProps = {
     align-items: center;
   `
 
-export const Home = () => {
+const Home = () => {
 
     const {colors, useDarkMode} = useContext(ThemeContext);
+
+    const SubjectDescription = styled.div`
+    align-self: start;
+
+    & img {
+      width: 100%;
+      border: 1px solid ${useDarkMode ? colors.primary[600] : colors.primary[200]};
+      margin-bottom: 20px;
+    }
+  `
 
     const MyContainerStyleProps = {
         backgroundColor: useDarkMode ? colors.gray[700] : colors.primary[200]
@@ -75,7 +83,7 @@ export const Home = () => {
                 <SubjectGroup>
                     <SubjectCard>
                         <SubjectDescription>
-                        My professional experience?
+                        My <b>professional</b> experience?
                         <p>Including:</p>
                         <ul>
                             <li>User experience and interface design</li>
@@ -88,11 +96,15 @@ export const Home = () => {
                         </SubjectLink>
                     </SubjectCard>
                     <SubjectCard>
-                            <SubjectDescription>My personal life? 
+
+                      <SubjectDescription>
+                            
+                            
+                              My <b>personal</b> life? 
                               <p>Such as:</p>
                                 <ul>
                                     <li>Travel</li>
-                                    <li>Photography</li>
+                                    <li>Pets</li>
                                     <li>Beloved books and media</li>
                                 </ul>
                             </SubjectDescription>
@@ -102,12 +114,14 @@ export const Home = () => {
                     </SubjectCard>
                     <SubjectCard>
                         <SubjectDescription>
-                        My endless hobbies? 
+                        
+                        My endless <b>hobbies</b>? 
                         <p>Especially:</p>
                         <ul>
                             <li>Spinning yarn</li>
                             <li>Weaving cloth</li>
                             <li>Growing flowers</li>
+                            <li>Pointing my camera at things</li>
                         </ul>
                         </SubjectDescription>
                         <SubjectLink>
@@ -118,3 +132,5 @@ export const Home = () => {
         </MyContainer>
     )
 }
+
+export default Home;

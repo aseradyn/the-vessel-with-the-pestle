@@ -10,6 +10,7 @@ export const Card = (props: any) => {
         padding: 10px;
         background-color: ${useDarkMode ? "inherit" : colors.primary[100]};
         border: 1px solid ${useDarkMode ? colors.primary[400] : colors.primary[300]};
+        max-width: 50em;
     `
 
     return (

@@ -31,6 +31,10 @@ function App() {
       body {
         color: ${useDarkMode ? colors.gray[200] : colors.gray[900]};
         background-color: ${useDarkMode ? colors.gray[700] : colors.primary[200]};
+        padding: 0px;
+        margin: 0px;
+        font-family: Inter, Arial, sans-serif;
+        font-size: 14px;
       }
       a, a:active, a:visited {
         color: ${useDarkMode ? colors.secondary[500] : colors.secondary[700]};

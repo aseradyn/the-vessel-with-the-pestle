@@ -1,0 +1,11 @@
+
+/* https://www.fontspace.com/steelworks-vintage-font-f24016 */
+@font-face {
+    font-family: 'SteelworksVintageDemo';
+    src: url('fonts/SteelworksVintageDemo-P5wE.otf'), url('fonts/SteelworksVintageDemo-rR98.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* https://rsms.me/inter/ */
+@import url('fonts/Inter/inter.css');

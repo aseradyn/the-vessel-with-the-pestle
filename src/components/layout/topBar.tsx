@@ -21,7 +21,7 @@ export default function TopBar() {
     const Layout = styled.div`
         padding: 5px 15px;
         display: grid;
-        grid-template-columns: 10em auto 10em;
+        grid-template-columns: 12em auto 10em;
         align-items: center;
 
         .quip-wrapper {
@@ -39,7 +39,7 @@ export default function TopBar() {
   return (
       <MyBar>
         <Layout>
-          <Typography variant="h6" component="div" sx={{ justifySelf: 'start', fontVariant: 'small-caps' }}>
+          <Typography variant="h6" component="div" sx={{ justifySelf: 'start', fontFamily: 'SteelworksVintageDemo', fontSize: '2em' }}>
             Jill.Menning
           </Typography>
           <span className="quip-wrapper"><Typography className="quip">
